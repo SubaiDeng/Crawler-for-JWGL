@@ -18,9 +18,8 @@ def main():
     cookie = cookielib.CookieJar()
     opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cookie))
     
-#    ID = '3114006174'
- #   paswd = 'a88482131'
-    
+
+
     start_headers = {
         'Host':'jwgl.gdut.edu.cn',
         'User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0',
@@ -68,7 +67,7 @@ def main():
         'txtUserName':ID,
         'TextBox2':paswd,
         'txtSecretCode':str(checkcode_num),
-        'RadioButtonList1':u'学生'.encode('gb2312'),
+        'RadioButtonList1':u'脩搂脡煤'.encode('gb2312'),
         'Button1':'',
         'lbLanguage':'',
         'hidPdrs':'',
@@ -88,4 +87,4 @@ def main():
 
 if __name__ == '__main__':
     main()
-    print u'学生'.encode('gb2312')
+    print u'脩搂脡煤'.encode('gb2312')
